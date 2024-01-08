@@ -42,13 +42,18 @@ namespace WpfApp1
       static MediaElement death = new MediaElement();
       static MediaElement collectCoin = new MediaElement();
       static int[,] map;
+      double countBlue = 0, countRed = 0;
+
 
       public void SetMap(int[,] _map)
       {
          map = _map;
       }
-
-
+      public void SetGemCount(int _countBlue, int _countRed)
+      {
+         countBlue = _countBlue;
+         countRed = _countRed;
+      }
 
       static Point startPositionBoy = new Point();
       static Point startPositionGirl = new Point();
@@ -630,7 +635,7 @@ namespace WpfApp1
 
 
          stopwatch.Restart();
-         if (!girl.playerOnDoor || !boy.playerOnDoor) 
+         if (!girl.playerOnDoor || !boy.playerOnDoor || boy.countGems < Math.Ceiling(countRed / 2) || girl.countGems < Math.Ceiling(countBlue / 2))
          {
             boy.Update(stopwatch.ElapsedMilliseconds);
             girl.Update(stopwatch.ElapsedMilliseconds);

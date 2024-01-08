@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("coincollect.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("death.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fireboyjump.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("intro.mp3")]

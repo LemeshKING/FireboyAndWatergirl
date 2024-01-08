@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{205AE5C8-9F5E-4113-A2EE-2CF19F8F29C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApp1</RootNamespace>
+    <AssemblyName>WpfApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Client.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientServerMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LocationMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Client.xaml.cs">
+      <DependentUpon>Client.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServerMenu.xaml.cs">
+      <DependentUpon>ClientServerMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocationMenu.xaml.cs">
+      <DependentUpon>LocationMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fireBoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waterGirl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="btnoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stoneMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stoneMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backGroundBrick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backGroundBrick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acidLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acidMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acidRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="acidLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="acidMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="acidRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lavaLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lavaMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lavaRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waterLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waterMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waterRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waterGirlLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="waterGirlRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fireBoyRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fireBoyLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="btnon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gateMiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="locationMenu.jpg" />
+    <Resource Include="backMenu.jpg" />
+    <Resource Include="blueGem.png" />
+    <Content Include="coinCollect.mp3" />
+    <Content Include="death.mp3" />
+    <Resource Include="death.wav" />
+    <Content Include="fireboyJump.mp3" />
+    <Content Include="intro.mp3" />
+    <Resource Include="level.mp3" />
+    <Content Include="levelComplete.mp3" />
+    <Resource Include="redGem.png" />
+    <Content Include="watergirlJump.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="audio\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

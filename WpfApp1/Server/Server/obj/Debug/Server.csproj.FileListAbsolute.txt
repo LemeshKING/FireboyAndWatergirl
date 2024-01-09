@@ -1,7 +1,0 @@
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\bin\Debug\Server.exe.config
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\bin\Debug\Server.exe
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\bin\Debug\Server.pdb
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\obj\Debug\Server.exe
-C:\hz\учеба\ЭСКТП\game\FireAndWater\WpfApp1\Server\Server\obj\Debug\Server.pdb
